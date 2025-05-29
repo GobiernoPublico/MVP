@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear Propuesta</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header><h2>Formulario de Propuesta</h2></header>
+    <main>
+      <form>
+        <label>Título</label><input type="text" required>
+        <label>Descripción</label><textarea rows="5" required></textarea>
+        <label>Ministerio</label>
+        <select>
+          <option>Educación</option>
+          <option>Salud</option>
+          <option>Justicia</option>
+        </select>
+        <label>Tipo de Votación</label>
+        <select>
+          <option>Binaria</option>
+          <option>Múltiple</option>
+        </select>
+        <label>Duración (días)</label>
+        <input type="number" min="1" max="30">
+        <button class="btn">Publicar</button>
+      </form>
+      <button class="btn secondary" onclick="navigate('dashboard.html')">Volver al Dashboard</button>
+    </main>
+  </div>
+</body>
+</html>

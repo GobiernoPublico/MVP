@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Gobierno Público</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>Gobierno Público</h2>
+      <p class="wallet">Wallet: 0xAbC123...456Ef</p>
+      <p class="user">Usuario: Ciudadano123</p>
+      <nav>
+        <button onclick="navigate('votar.html')">Votar</button>
+        <button onclick="navigate('propuesta.html')">Crear Propuesta</button>
+        <button onclick="navigate('comparador.html')">Comparador</button>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <section class="stats">
+        <div class="card">
+          <h3>Votaciones Realizadas</h3>
+          <p>12</p>
+        </div>
+        <div class="card">
+          <h3>Propuestas Creadas</h3>
+          <p>4</p>
+        </div>
+        <div class="card">
+          <h3>Tipo de Usuario</h3>
+          <p>Verificado (.org)</p>
+        </div>
+      </section>
+      <section class="highlight">
+        <h2>Participa Ahora</h2>
+        <p>Consulta activa: ¿Aprueba usted la creación de un Ministerio de Tecnología Cívica?</p>
+        <button onclick="navigate('votar.html')">Ir a votar</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
